@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National BALLET</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 내꺼는 스와이퍼보다 밑에 있어야한다. -->
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <h1><a href="#"><span class="material-symbols-outlined">
+                        draw
+                    </span>NATIONAL BALLET</a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">발레단 사람들</a>
+                        <ul>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">예술 스태프</a></li>
+                            <li><a href="#">아티스트</a></li>
+                            <li><a href="#">행정 스태프</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공연정보</a>
+                        <ul>
+                            <li><a href="#">공연안내</a></li>
+                            <li><a href="#">월간일정</a></li>
+                            <li><a href="#">연간일정</a></li>
+                            <li><a href="#">프로덕션</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아카데미</a>
+                        <ul>
+                            <li><a href="#">아카데미 소개</a></li>
+                            <li><a href="#">강사진 소개</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">강좌 및 등록안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">발레단 소식</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong><span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="custom_cursor"></div>
+
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide mv1"><a href="#">
+                                <!-- <div class="tit">
+                                    <p>NATIONAL PRIDE</p>
+                                    <h2>21century<span>Korea</span>Ballet</h2>
+                                </div> -->
+                            </a></li>
+                        <li class="swiper-slide mv2"><a href="#">
+                                <!-- <div class="tit">
+                                    <p>FROM THE BASICS TO A professional LEVEL </p>
+                                    <h2>A <span>systematic </span>traning program</h2>
+                                </div> -->
+                            </a></li>
+                        <li class="swiper-slide mv3"><a href="#">
+                                <!--  <div class="tit">
+                                    <p>HIGH END BALLET</p>
+                                    <h2>Elegant Diligent Beautiful</h2>
+                                </div> -->
+                            </a></li>
+                    </ul>
+                </div><!-- .main_slide_wrap -->
+
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num"><span class="swiper-pagination-current">01</span> / 03</div>
+
+                    <!-- 중앙 세로라인(진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit"><span>The </span>Art <span>of </span>Movement, <span>the </span>Soul </strong>
+                    <b class="tit"><span>of </span>a <span>Nation </span>
+                        <em class="tit"><span>NATIONAL </span>BALLET</em>
+                </h2>
+            </section>
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">Ballerina</div>
+                        <ul class='list'>
+                            <li>
+                                취미부터 기초 고급까지 당신을 지원합니다.
+                            </li>
+                            <li>
+                                국립발레단에 오신것을 환영합니다.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">OUR Ballet</h2>
+                        <p>특별한 수업 경험을 통해<br>
+                            수준있는 무용을 만들어냅니다.
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>취미</h3>
+                                    <p>고급취미로 <br>새로운 세상을 만나보세요.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>기초</h3>
+                                    <p>체계적인 수업을 기반으로<br>레벨업을 위한 수업을 들어보세요.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>고급</h3>
+                                    <p>차근히 다져진 실력으로<br> 당신의 발레를 지원합니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">OUR EXPERIENCE</h2>
+                    <p>유명한 작품들을 공연으로 만나볼 수 있습니다.
+                    </p>
+                    <ul>
+                        <li data-scroll data-scroll-speed="1">
+                            <div class="img_box"><img src="img/1 (2).png" alt=""></div>
+                            <div class="name">
+                                <strong>백조의 호수</strong>
+                                <p>백조로 변한 오데트 공주와 지크프리트 왕자의 비극적인 사랑 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="3">
+                            <div class="img_box"><img src="img/2.png" alt=""></div>
+                            <div class="name">
+                                <strong>호두까기 인형</strong>
+                                <p>크리스마스 이브 밤, 클라라가 호두까기 인형과 함께 마법의 세계를 여행하는 꿈 같은 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="1">
+                            <div class="img_box"><img src="img/3.png" alt=""></div>
+                            <div class="name">
+                                <strong>돈키호테</strong>
+                                <p>돈키호테의 모험 속에 등장하는 연인 키트리와 바질의 사랑 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="3">
+                            <div class="img_box"><img src="img/4.png" alt=""></div>
+                            <div class="name">
+                                <strong>로미오와 줄리엣</strong>
+                                <p>셰익스피어의 원작을 바탕으로 한 비극적 사랑 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="1">
+                            <div class="img_box"><img src="img/5.png" alt=""></div>
+                            <div class="name">
+                                <strong>오네긴</strong>
+                                <p>타티아나와 오네긴의 엇갈린 사랑과 후회의 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="3">
+                            <div class="img_box"><img src="img/6.png" alt=""></div>
+                            <div class="name">
+                                <strong>잠자는 숲속의 미녀</strong>
+                                <p>마법에 걸린 오로라 공주가 백마 탄 왕자의 키스로 깨어나는 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="1">
+                            <div class="img_box"><img src="img/7.png" alt=""></div>
+                            <div class="name">
+                                <strong>지젤</strong>
+                                <p>순진한 시골 소녀 지젤이 사랑에 속아 죽고, 윌리(유령 무용수)가 되어 사랑했던 이를 용서하는 이야기.</p>
+                            </div>
+                        </li>
+                        <li data-scroll data-scroll-speed="3">
+                            <div class="img_box"><img src="img/8.png" alt=""></div>
+                            <div class="name">
+                                <strong>라 실피드</strong>
+                                <p>인간 남성과 요정(실피드)의 이뤄질 수 없는 사랑 이야기.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- //.s_tit -->
+            </section>
+            <section class="business">
+                <div class="s_tit">
+                    <h2>Our Projects</h2>
+                    <p>다양한 분야의 디자인 프로젝트를 통해<br>실전 감각을 키워나갑니다.</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b1.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo1.png" alt="프로젝트 서브로고">
+                                    <span>"Étoile Ballet Company"</span>
+                                    <h3>감성과 예술을 <br>시각적으로 전달하는 발레단.</h3>
+                                    <p>클래식과 현대 감성을 연결해, 발레를 낯설게 느끼는 MZ세대에게도 매력적으로 다가가는 목적.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>우아함 섬세함 몽환미</li>
+                                            <li>20~40대 예술 감성에 민감한 여성</li>
+                                            <li>클래식과 라이프스타일을 함께 소비하는 계층</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b2.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo2.png" alt="프로젝트 서브로고">
+                                    <span>“NBK LIVE: 발레의 오늘을 담다”</span>
+                                    <h3>발레 공연을 중심으로 한 <br>공연 실황 스트리밍 & VOD 서비스 플랫폼 구축.</h3>
+                                    <p>발레 교육 콘텐츠 확보로 장기적인 예술문화 저변 확대.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>Z세대까지 아우르는 발레 팬층 확대</li>
+                                            <li>K-클래식 콘텐츠 수출 기반 마련</li>
+                                            <li>비수도권, 장애인 등 공연장 접근 어려운 이들 위한 문화복지 실현</li>
+                                            <li>예술의 디지털 아카이빙: 10년 뒤에도 발레 감동을 공유할 수 있게</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b3.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo3.png" alt="프로젝트 서브로고">
+                                    <span>“NBK Connect: 관객과 무용수를 잇는 다리”</span>
+                                    <h3>국립발레단의 예술성과 대중성과의 균형을 맞추기 위해,<br>무용수와 관객 간의 상호작용을 강화.</h3>
+                                    <p> 디지털/오프라인 소통 채널을 다각화하는 프로젝트.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>고전 발레의 현대적 재해석</li>
+                                            <li>지역 예술교육 불균형 해소</li>
+                                            <li>직업 예술인 인식 확산</li>
+                                            <li>무용수와 팬 간의 신뢰 형성, 충성도 있는 관객 확보</li>
+                                            <li>국립예술단체로서의 품격과 시대 흐름 모두 반영 가능</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b4.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo4.png" alt="프로젝트 서브로고">
+                                    <span>NBK ArtBridge</span>
+                                    <h3>국립 발레단의 예술성과 공공성을 강화하며,<br> 지역사회와의 연결을 통해 국가기관으로서의 문화적 책무를 수행한다.</h3>
+                                    <p>발레 예술 확산을 위한 공공 연계 프로그램.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>예술접근성 향상</li>
+                                            <li>예술교육 지원</li>
+                                            <li>지역 파트너십</li>
+                                            <li>국립예술단체 위상</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img/logo5.png" alt="프로젝트 서브로고">
+                                    <span>국립발레단 유산화 사업</span>
+                                    <h3>K-클래식 발레 기록보존 및 계승<br>국가 문화유산으로서의 발레예술 기록 확보.</h3>
+                                    <p>미래 세대를 위한 예술교육 및 연구 자산으로 전환.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>공연 아카이브 디지털화</li>
+                                            <li>인터뷰 기반 구술사 정리</li>
+                                            <li>한국형 고전 발레 레퍼토리 정리</li>
+                                            <li>DB 기반 오픈 아카이브 시스템 구축</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">No.1 Lifestyle<br>
+                        NATIONAL BALLET</h2>
+                    <p>아름다운 무용수들의 모습입니다.<br>
+                        수년간 다져진 그들의 수업 영상입니다.<br>
+                        미래의 아름다운 무용수들 입니다.<br>
+                        그들의 노력들에 박수를 보냅니다.</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img/balletvideo.mp4" loop autoplay muted playsinline></video>
+                </figure>
+            </section>
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>Our Commitment</h2>
+                    <p>우리는 창의적이고 실무 중심의 커리큘럼으로<br>차세대 UIUX 디자이너를 양성합니다.</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>Creative Thinking</h3>
+                                <p>트렌드를 읽고 새로운 경험을 디자인하는 창의적 사고를 키웁니다.</p>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>Practical Skills</h3>
+                                <p>현업에서 바로 통하는 디자인 툴과 실전 프로젝트를 통해 실력을 완성합니다.</p>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>Career Support</h3>
+                                <p>포트폴리오 제작부터 취업 컨설팅까지, 당신의 커리어를 함께 만들어갑니다.</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="news">
+                <div class="s_tit">
+                    <h2>Latest Updates</h2>
+                    <p>디자인 트렌드와 수강생들의<br>생생한 이야기를 만나보세요.</p>
+                    <a href="#" class="more">View More &gt;</a>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t1.png" alt=""></div>
+                                <p class="txt">
+                                    2025 UI/UX 트렌드 총정리 - 지금 주목해야 할 디자인 키워드
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t2.png" alt=""></div>
+                                <p class="txt">
+                                    수강생 인터뷰: 비전공자에서 UI 디자이너 취업 성공기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t3.png" alt=""></div>
+                                <p class="txt">
+                                    포트폴리오 완성법 - 실무자가 알려주는 꿀팁 모음
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t4.png" alt=""></div>
+                                <p class="txt">
+                                    실습 프로젝트 공개! 7일 만에 앱 디자인 완성하기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t5.png" alt=""></div>
+                                <p class="txt">
+                                    채용 담당자가 말하는 '좋은 포트폴리오'의 비밀
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t6.png" alt=""></div>
+                                <p class="txt">
+                                    브랜딩부터 마이크로 인터랙션까지, 실전 UI 제작기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t7.png" alt=""></div>
+                                <p class="txt">
+                                    수강생 후기: "포트폴리오 덕분에 첫 취업 성공했어요!"
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t8.png" alt=""></div>
+                                <p class="txt">
+                                    디자인 도구 완전 정복: Figma, Adobe XD, chatgpt
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>NATIONAL BALLET</h3>
+            <p>국립발레단에는<br>
+                여러분과 <span>아름다운 무용수들이</span> 함께합니다.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
