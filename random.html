@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>랜덤 뽑기</title>
+</head>
+
+<body>
+  <script>
+    let uiuxClass = ['고은님','김영채','김예슬','김정이','김희영','노현지','박아인','신재이','신종현','안희정','윤채원','이나라','이충호','전지후','정혜림','최슬기','최이현','최지원','홍혜주','박소휘']; 
+
+   /*  let uiuxClass = ['[미니-3지망조] Vocapet(보카펫)', '[미니-2조이조] I-RUN(아이런)', '[미니-삼삼이조] On tour(온투어)', '[미니-포텐조] FINPICK(핀픽)'] */
+    let random = [];
+    //uiuxClass[random[2]]
+    let len = uiuxClass.length;
+
+    for (let i = 0; i < len; i++) {
+      random[i] = Math.floor(Math.random() * len);
+      for (let j = 0; j < i; j++) { //중복 제거
+        if (random[i] == random[j]) {
+          i--;
+          break;
+        }
+      }
+    }
+
+    function docu() {
+      for (let i = 0; i < len; i++) {
+        //console.log(random[i]);
+        alert(`(${i + 1}) ${uiuxClass[random[i]]}`);
+        document.write(`(${i + 1}) ${uiuxClass[random[i]]}<br>`);
+      }
+    }
+
+    //docu();
+  </script>
+  <button type="button" onclick="docu();">랜덤 버튼</button>
+</body>
+
+</html>

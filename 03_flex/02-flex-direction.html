@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <link rel="stylesheet" href="default.css">
+  <style>
+    .flex-container{
+      display: flex;
+      flex-direction: row; /* 기본 값 : 아이템들이 행(가로) 방향으로 배치 */
+      flex-direction: column; /* 아이템들이 열(세로) 방향으로 배치 */
+      flex-direction: row-reverse;/* 아이템들이 역순으로 가로 배치 */
+      flex-direction: column-reverse; /* 아이템들이 역순으로 세로 배치 */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">AAAAAAAAAAAA</div>
+    <div class="flex-item">BBB</div>
+    <div class="flex-item">CCCCCCCCCC</div>
+  </div>
+</body>
+</html>
