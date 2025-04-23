@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.gra1 {
+  background: linear-gradient(132deg, #F66969 15.86%, rgba(255, 234, 189, 0.50) 50.3%, #5149C0 86.15%);
+}
+
+.gra2 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(30deg, rgba(131, 58, 180, 1) 0%, rgba(131, 253, 29, 1) 41%, rgba(51, 127, 211, 1) 73%, rgba(252, 176, 69, 1) 100%);
+}
+.gra3{}
+.gra4{}
+.gra5{}
+.gra6{}
+.gra7{}

@@ -42,6 +42,6 @@ $(function () {
     }
 
     // 주기적으로 생성
-    setInterval(createLeaf, 900);
+    setInterval(createLeaf, 600);
 
 });

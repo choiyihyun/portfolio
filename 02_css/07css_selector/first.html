@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상 요소</title>
+  <style>
+    /* 특정 요소의 첫번째 줄에 스타일 적용 */
+    p::first-line {
+      color: red;
+    }
+
+    /* 특정 요소의 첫번째 글자에 스타일 적용 */
+    p::first-letter {
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+     Animi, vero voluptas repudiandae et in reiciendis perferendis qui repellat ipsum omnis dolor necessitatibus provident, assumenda, iusto eum repellendus aperiam est ipsa?
+  </p>
+</body>
+</html>

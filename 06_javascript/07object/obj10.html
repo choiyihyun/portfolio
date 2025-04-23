@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 변수를 사용해 속성 값 설정하기</title>
+</head>
+<body>
+    <script>
+        function add(){
+            let img=document.createElement('img');
+            img.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUSIpmqk3XSF33oI1aJqREl4yt4dsFN-Y55g&s';
+            img.width=100;
+            img.height=122;
+            img.alt='슬기';
+            document.body.appendChild(img);
+        }
+
+    </script>
+    <button type="button" onclick="add()"></button>
+</body>
+</html>

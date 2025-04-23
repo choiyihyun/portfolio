@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* reset */
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {color: #333;}
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+img{vertical-align: top;}
+
+/* layout */
+.wrap{width: 1200px; margin: 0 auto;}
+header{
+  width: 100%;
+  height: 100px;
+  background: #aaa;
+}
+header h1{
+  width: 200px;
+  float: left;
+}
+header h1 a{
+  display: block;
+  width: 100%; height: 100px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+header nav{
+  width: 60%; 
+  background: lightcoral;
+  float: right;
+  margin-top: 20px; margin-right: 20px;
+}
+header nav ul.gnb{
+  width: 100%;
+}
+header nav ul.gnb>li{
+  width: 25%;
+  background: #ccc;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+header nav ul.gnb>li>a{
+  display: block;
+  height: 40px; line-height: 40px;
+  background: palegreen;
+}
+header nav ul.gnb>li>ul.sub{
+  width: 100%;
+  position: absolute;
+  left: 0; top: 40px;
+  display: none;
+}
+header nav ul.gnb>li>ul.sub>li{
+  width: 100%; height: 36px;
+  line-height: 36px;
+  background: lavender;
+}
+header nav ul.gnb>li>ul.sub>li>a{
+  display: block;
+}
+.main_visual{
+  width: 100%;
+  height: 300px;
+  background: #bbb;
+}
+.contents{
+  width: 100%; height: 200px;
+  background: #ccc;
+}
+.contents .notice_gal{
+  width: 400px; height: 100%;
+  background: red;
+  float: left;
+}
+.contents .banner{
+  width: 400px; height: 100%;
+  background: gold;
+  float: left;
+}
+.contents .go{
+  width: 400px; height: 100%;
+  background: blue;
+  float: left;
+}
+
+footer{
+  width: 100%; height: 100px;
+  background: #ddd;
+}
+footer .logo{width: 200px; height: 100%;float: left;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+footer .copy{width: 700px; height: 100%;background: red;float: left;}
+footer .sns{width: 300px; height: 100%;background: lavender;float: left;}

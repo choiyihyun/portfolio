@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: inherit;}
+    body{font-size: 30px; color: #fff;}
+    .wrap{width: 1080px; margin: 0 auto;}
+    .nav{background: #aaa; height: 100px; margin-bottom: 10px;}
+    .nav ul{height: 100%;}
+    .nav ul li{
+      width: 25%; height: 100%;background: red;float: left;
+      border-right: 1px solid #000;
+      box-sizing: border-box;
+    }
+    .nav ul li:last-child{border-right: 0;}
+    .nav ul li a{
+      text-align: center;
+      display: block;
+      line-height: 100px;
+    }
+    .header{background: #bbb;width: 250px; height: 500px;float: left;margin-bottom: 10px;}
+    .con1{background: #ccc;width: 250px; height: 500px;float: left; margin-left: 10px;}
+    .con2{background: #ddd;width: 560px; height: 500px;float: right;}
+    .footer{background: #eee; height: 80px;clear: both;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+    </div><!-- //.nav -->
+    <div class="header">header</div><!-- //.header -->
+    <div class="con1">con1</div><!-- //.con1 -->
+    <div class="con2">con2</div><!-- //.con2 -->
+    <div class="footer">footer</div><!-- //.footer -->
+  </div><!-- //.wrap -->
+</body>
+</html>
