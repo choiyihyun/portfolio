@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radio checkbox</title>
+</head>
+<body>
+  <form action="aaa.php" method="post">
+    <fieldset>
+      <legend>신청 과목</legend>
+      <p>이달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+      <!-- 라디오 버튼은 여러개 중에서 한가지만 선택하는 것이기 때문에 관련있는 그룹끼리는 name속성값을 똑같이 만듭니다 -->
+      <label>
+        <input type="radio" name="subject" value="speacking" checked>
+        회화
+      </label>
+      <label>
+        <input type="radio" name="subject" value="grammar">
+        문법
+      </label>
+      <label>
+        <input type="radio" name="subject" value="writing">
+        작문
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>메일링</legend>
+      <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)</p>
+      <label>
+        <input type="checkbox" name="mailing1" value="news">
+        해외 단신
+      </label>
+      <label>
+        <input type="checkbox" name="mailing2" value="dialod" checked>
+        5분 회화
+      </label>
+      <label>
+        <input type="checkbox" name="mailing3" value="pops">
+        모닝 팝스
+      </label>
+    </fieldset>
+  </form>
+</body>
+</html>

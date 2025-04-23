@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script>
+        let userName=prompt('당신이 좋아하는 연예인은 누구입니까?');
+        function addPlus(){
+            //<h3> width 100
+                let h3=document.createElement('h3');
+                let txt=document.createTextNode(`좋아하는 연예인은 ${userName} 입니다`);
+                h3.appendChild(txt);
+                document.body.appendChild(h3);
+                let img = document.createElement('img');
+                img.src='https://newsimg.sedaily.com/2020/10/23/1Z98SM97MM_1.jpg';
+                img.alt=userName;
+                img.setAttribute('width',100);
+                h3.appendChild(img);
+        }
+    </script>
+    <button type="button" id="btn" onclick="addPlus()">이름 및 이미지 출력</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/poposnail61/min-sans@main/web/css/minsans-dynamic-subset.css");
+/* 
+    폰트, 변수선언(컬러)///
+*/
+@font-face {
+    font-family: 'MoveSans';
+    src: url('../font/MoveSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MoveSans';
+    src: url('../font/MoveSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MoveSans';
+    src: url('../font/MoveSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+p{
+    font-family: 'MoveSans';
+    font-weight: 700;
+    font-size: 10rem;
+}
+* {box-sizing: border-box;}
+:root{
+
+}
+.inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.conatiner{
+    width: 1380px;
+    margin: 0 auto;
+}

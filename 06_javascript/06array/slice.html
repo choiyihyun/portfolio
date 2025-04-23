@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice() 메서드</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        배열의 특정 범위에 속하는 원소만 선택하여 배열 생성
+        array.slice(start,end인덱스 직전까지)
+        */
+        let kdata = ["서울", "부산", "구포", "대구", "인천", "대전", "세종"];
+        let str1 = kdata.slice(0,4);
+        document.write('부분배열1 : '+str1 +'<br>');
+        console.log(kdata);
+        let str2 = kdata.slice(2,-1);
+        document.write(str2);
+
+        //str3 대구 인천
+        let str3 = kdata.slice(-4,-2)
+        console.log(str3);
+        //str4 부산 구포 대구 인천 
+        let str4 = kdata.slice(1,-2);
+        console.log(str4);
+    </script>
+</body>
+
+</html>
